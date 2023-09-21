@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Insumos STEAM y 4.0</title>
+
+<script src="site_libs/header-attrs-2.24/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">STEAM & 4.0</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Inicio</a>
+</li>
+<li>
+  <a href="asteam.html">Tipos de educación para el siglo XXI</a>
+</li>
+<li>
+  <a href="rsteam.html">Insumos STEAM y 4.0</a>
+</li>
+<li>
+  <a href="propuesta.html">Propuesta de capacitación</a>
+</li>
+<li>
+  <a href="about.html">About</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Insumos STEAM y 4.0</h1>
+
+</div>
+
+
+<div style="text-align: justify">
+
+<p>La transformación educativa hacia enfoques como STEAM, 4.0, o incluso
+una combinación de ambos, es un proceso que comienza con la creación de
+los espacios adecuados y la capacitación de los docentes. Estos dos
+elementos fundamentales forman la base sobre la cual se construye un
+ambiente de aprendizaje innovador y efectivo.</p>
+<p>La creación de espacios adecuados implica la configuración de aulas y
+entornos que fomenten la creatividad, la experimentación y la
+colaboración. Un aula STEAM, por ejemplo, debe estar equipada con
+recursos que permitan a los estudiantes explorar conceptos científicos,
+tecnológicos, matemáticos y artísticos de manera práctica. Esto podría
+incluir desde kits de robótica y herramientas de diseño hasta material
+de arte y dispositivos tecnológicos. En el caso de un aula 4.0, es
+fundamental contar con tecnología avanzada, acceso a internet y espacios
+flexibles que faciliten la adaptación a las tendencias digitales y la
+personalización del aprendizaje.</p>
+<p>Sin embargo, los espacios por sí solos no son suficientes. Los
+docentes desempeñan un papel central en la implementación efectiva de
+estos enfoques. La capacitación adecuada es esencial para que los
+educadores puedan aprovechar al máximo los recursos disponibles y guiar
+a los estudiantes en su viaje de descubrimiento y aprendizaje. Esto
+implica no solo adquirir habilidades técnicas, como el dominio de
+herramientas digitales o la comprensión de conceptos STEM/STEAM, sino
+también desarrollar estrategias pedagógicas que fomenten la creatividad,
+el pensamiento crítico y la resolución de problemas.</p>
+<p>La combinación de espacios bien diseñados y docentes altamente
+capacitados crea un entorno de aprendizaje enriquecedor. Esto permite a
+los estudiantes explorar, experimentar y colaborar en proyectos
+significativos que se alinean con las demandas del mundo actual. Además,
+promueve una cultura de aprendizaje continuo, en la que tanto docentes
+como alumnos se convierten en coaprendices, adaptándose a un panorama
+educativo en constante evolución.</p>
+<p>La transformación educativa hacia enfoques STEAM, 4.0 o una
+combinación de ambos comienza con la inversión en espacios adecuados y
+en la formación de docentes. Estos dos pilares proporcionan los
+cimientos sólidos sobre los cuales se construye una educación más
+relevante y preparada para el futuro, que capacita a los estudiantes con
+las habilidades y el pensamiento necesario para enfrentar los desafíos
+del siglo XXI.</p>
+<div id="ejemplos-de-insumos-para-steam-y-4.0" class="section level1">
+<h1>1. Ejemplos de Insumos para STEAM y 4.0</h1>
+<div id="ejemplo-1" class="section level2">
+<h2>Ejemplo 1</h2>
+<p>Insumos comunes necesarios para un aula STEAM y un aula 4.0. hay que
+considerar que los recursos pueden variar según el nivel educativo, los
+objetivos específicos y el presupuesto disponible. Esta tabla es una
+referencia general:</p>
+<table>
+<colgroup>
+<col width="20%" />
+<col width="38%" />
+<col width="40%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Insumo</th>
+<th>Aula STEAM</th>
+<th>Aula 4.0</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Dispositivos</td>
+<td>Computadoras o tabletas</td>
+<td>Computadoras o tabletas</td>
+</tr>
+<tr class="even">
+<td>Software educativo</td>
+<td>Programas de diseño, programación, etc.</td>
+<td>Plataformas de aprendizaje en línea</td>
+</tr>
+<tr class="odd">
+<td>Material de arte</td>
+<td>Papel, lápices de colores, pinceles, etc.</td>
+<td>Material de arte digital (tabletas gráficas, programas de
+diseño)</td>
+</tr>
+<tr class="even">
+<td>Equipo de laboratorio</td>
+<td>Microscopios, modelos, instrumentos científicos</td>
+<td>Sensores y dispositivos IoT (Internet de las cosas)</td>
+</tr>
+<tr class="odd">
+<td>Kits de robótica</td>
+<td>Kits de robótica para proyectos</td>
+<td>Kits de robótica avanzados, Arduino, Raspberry Pi</td>
+</tr>
+<tr class="even">
+<td>Herramientas</td>
+<td>Herramientas manuales (destornilladores, pinzas, martillos)</td>
+<td>Herramientas de programación y simulación</td>
+</tr>
+<tr class="odd">
+<td>Material didáctico</td>
+<td>Libros de referencia, kits de experimentos, modelos</td>
+<td>Contenido educativo en línea, recursos digitales</td>
+</tr>
+<tr class="even">
+<td>Materiales reciclados</td>
+<td>Elementos reciclables para proyectos creativos</td>
+<td>Elementos reciclables para proyectos creativos</td>
+</tr>
+<tr class="odd">
+<td>Acceso a internet</td>
+<td>Conexión a internet para investigación y colaboración</td>
+<td>Conexión a internet para acceso a recursos en línea</td>
+</tr>
+<tr class="even">
+<td>Mobiliario adaptable</td>
+<td>Mesas y sillas flexibles para grupos de trabajo</td>
+<td>Espacios flexibles de colaboración y aprendizaje</td>
+</tr>
+<tr class="odd">
+<td>Impresora 3D</td>
+<td>Impresora 3D para proyectos de diseño e ingeniería</td>
+<td>Impresora 3D para prototipado y diseño</td>
+</tr>
+<tr class="even">
+<td>Equipo de audio y video</td>
+<td>Equipos para grabación y edición de contenido multimedia</td>
+<td>Equipos de videoconferencia y grabación de lecciones</td>
+</tr>
+<tr class="odd">
+<td>Herramientas en línea</td>
+<td>Plataformas de gestión del aprendizaje, herramientas de
+colaboración</td>
+<td>Software de gestión del aprendizaje, herramientas de colaboración en
+línea</td>
+</tr>
+<tr class="even">
+<td>Suministros generales</td>
+<td>Papel, bolígrafos, tijeras, cinta adhesiva, etc.</td>
+<td>Papel, bolígrafos, tijeras, cinta adhesiva, etc.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="ejemplo-2" class="section level2">
+<h2>Ejemplo 2</h2>
+<table>
+<colgroup>
+<col width="35%" />
+<col width="35%" />
+<col width="28%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Insumo</th>
+<th>Aula STEAM</th>
+<th>Aula 4.0</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Computadoras</td>
+<td>Sí (para programación y diseño)</td>
+<td>Sí (para tecnología)</td>
+</tr>
+<tr class="even">
+<td>Software de diseño y simulación</td>
+<td>Ejemplo: Adobe Creative Cloud</td>
+<td>Ejemplo: Autodesk, CAD</td>
+</tr>
+<tr class="odd">
+<td>Kits de robótica y electrónica</td>
+<td>LEGO Mindstorms, Arduino, etc.</td>
+<td>Sensores IoT, Raspberry Pi</td>
+</tr>
+<tr class="even">
+<td>Herramientas de fabricación</td>
+<td>Impresoras 3D, cortadoras láser</td>
+<td>Equipos CNC, impresoras 3D</td>
+</tr>
+<tr class="odd">
+<td>Materiales para prototipado</td>
+<td>Plástico ABS, cartón, madera, etc.</td>
+<td>Materiales de impresión 3D</td>
+</tr>
+<tr class="even">
+<td>Equipos de laboratorio</td>
+<td>Microscopios, balanzas, etc.</td>
+<td>Sensores científicos</td>
+</tr>
+<tr class="odd">
+<td>Material de arte y manualidades</td>
+<td>Pinceles, pinturas, papel, etc.</td>
+<td>Herramientas digitales</td>
+</tr>
+<tr class="even">
+<td>Equipo multimedia</td>
+<td>Proyector, pizarra interactiva</td>
+<td>Pantallas táctiles, VR</td>
+</tr>
+<tr class="odd">
+<td>Tablets o dispositivos móviles</td>
+<td>Sí (para investigaciones)</td>
+<td>Sí (para aplicaciones)</td>
+</tr>
+<tr class="even">
+<td>Kits de programación</td>
+<td>Scratch, Python, etc.</td>
+<td>Plataformas de aprendizaje</td>
+</tr>
+<tr class="odd">
+<td>Acceso a Internet</td>
+<td>Sí</td>
+<td>Sí</td>
+</tr>
+<tr class="even">
+<td>Herramientas de colaboración</td>
+<td>Plataformas de trabajo en equipo</td>
+<td>Aplicaciones colaborativas</td>
+</tr>
+<tr class="odd">
+<td>Material de laboratorio</td>
+<td>Reactivos químicos, material de laboratorio</td>
+<td>Sensores científicos, IoT</td>
+</tr>
+<tr class="even">
+<td>Elementos de seguridad</td>
+<td>Gafas de seguridad, batas, etc.</td>
+<td>Ciberseguridad</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="ejemplo-3" class="section level2">
+<h2>Ejemplo 3</h2>
+<table>
+<colgroup>
+<col width="16%" />
+<col width="42%" />
+<col width="40%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Insumos</th>
+<th>Aula STEAM</th>
+<th>Aula 4.0</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Hardware y Software</strong></td>
+<td>- Computadoras o tabletas</td>
+<td>- Computadoras o tabletas</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>- Software de diseño gráfico y modelado 3D</td>
+<td>- Plataformas de aprendizaje en línea</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>- Software de programación y robótica ()</td>
+<td>- Herramientas de comunicación en línea (correo, chat)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>- Kits de robótica y electrónica</td>
+<td>- Herramientas de colaboración en línea (Google Docs)</td>
+</tr>
+<tr class="odd">
+<td><strong>Equipo de Laboratorio</strong></td>
+<td>- Microscopios</td>
+<td>- Sensores de temperatura y humedad</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>- Equipos de laboratorio de química y biología</td>
+<td>- Equipos de laboratorio de ciencia</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>- Kits de experimentos científicos</td>
+<td>- Impresoras 3D</td>
+</tr>
+<tr class="even">
+<td><strong>Material Didáctico</strong></td>
+<td>- Material de arte (pinceles, pinturas, arcilla)</td>
+<td>- Pizarras digitales</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>- Libros de referencia y guías</td>
+<td>- Proyectores</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>- Material para proyectos de construcción (LEGO, bloques)</td>
+<td>- Material de oficina (papel, lápices, etc.)</td>
+</tr>
+<tr class="odd">
+<td><strong>Herramientas de Conexión y Comunicación</strong></td>
+<td>- Internet de alta velocidad</td>
+<td>- Internet de alta velocidad</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>- Dispositivos de videoconferencia (cámaras, micrófonos)</td>
+<td>- Software de videoconferencia (Zoom, Microsoft Teams)</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>- Plataformas de colaboración en línea (Google Workspace)</td>
+<td>- Correo electrónico institucional</td>
+</tr>
+<tr class="even">
+<td><strong>Mobiliario</strong></td>
+<td>- Mesas y sillas móviles para trabajo en grupo</td>
+<td>- Mobiliario ergonómico</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>- Estaciones de trabajo con espacio para tecnología</td>
+<td>- Sillas con soporte lumbar</td>
+</tr>
+<tr class="even">
+<td><strong>Recursos Adicionales</strong></td>
+<td>- Material reciclado y reutilizable (para proyectos STEAM)</td>
+<td>- Material digital interactivo (tabletas, pizarras)</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>- Cajas de herramientas y equipos de seguridad</td>
+<td>- Dispositivos móviles (tabletas, teléfonos)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>- Material para jardinería y cultivo (para proyectos STEAM)</td>
+<td>- Dispositivos de realidad virtual o aumentada</td>
+</tr>
+</tbody>
+</table>
+<p>Es importante destacar que, en un aula 4.0, la tecnología desempeña
+un papel central y se enfoca en la adaptación a las tendencias
+tecnológicas actuales, mientras que un aula STEAM se centra en la
+integración de Ciencia, Tecnología, Ingeniería, Artes y Matemáticas,
+utilizando una variedad de recursos para proyectos interdisciplinarios.
+La elección de insumos dependerá de los objetivos específicos de
+enseñanza y aprendizaje de cada aula y del nivel educativo al que se
+destine.</p>
+</div>
+</div>
+<div id="software" class="section level1">
+<h1>2. Software</h1>
+<p>En la configuración de un aula STEAM o 4.0, uno de los elementos
+fundamentales es la presencia de equipos de cómputo. Ya sea que se trate
+de laptops, computadoras de escritorio, tablets u otros dispositivos, la
+tecnología es el motor que impulsa la innovación y la transformación
+educativa en la era digital. Lo que hace que estos equipos sean aún más
+poderosos es la abundancia de software gratuito y de código abierto
+disponible que puede ser utilizado para apoyar la educación y preparar a
+los estudiantes para el siglo XXI.</p>
+<p>La disponibilidad de software gratuito ofrece una serie de ventajas
+clave. En primer lugar, elimina las barreras económicas, permitiendo que
+las instituciones educativas con presupuestos limitados accedan a
+herramientas educativas de alta calidad. En segundo lugar, promueve la
+accesibilidad al poner al alcance de los estudiantes y docentes
+herramientas que pueden utilizarse en casa o en cualquier lugar con una
+conexión a internet. Esto fomenta el aprendizaje autónomo y la
+continuidad de la educación más allá de las aulas tradicionales.</p>
+<p>En el contexto de un aula STEAM o 4.0, el software gratuito juega un
+papel crucial en el desarrollo de habilidades esenciales. Por ejemplo,
+en matemáticas y ciencias, existen software de simulación que permite a
+los estudiantes explorar conceptos abstractos de una manera visual y
+práctica. En programación y robótica, las herramientas de código abierto
+brindan oportunidades para la creación y la experimentación. En diseño y
+arte digital, el software gratuito puede equipar a los estudiantes con
+las habilidades necesarias para la creación de contenido multimedia.</p>
+<p>Algunos ejemplos de software gratuito que pueden ser valiosos en un
+aula STEAM o 4.0 incluyen:</p>
+<ul>
+<li><p><strong>Scratch:</strong> Un entorno de programación visual que
+introduce a los niños y adolescentes en la programación de manera
+lúdica.</p></li>
+<li><p><strong>Blender:</strong> Un software de modelado y animación en
+3D que puede ser utilizado en proyectos de diseño y arte
+digital.</p></li>
+<li><p><strong>GeoGebra:</strong> Una herramienta matemática que combina
+geometría, álgebra, cálculo y estadísticas.</p></li>
+<li><p><strong>GIMP:</strong> Un editor de imágenes de código abierto
+que proporciona capacidades de edición similares a Adobe
+Photoshop.</p></li>
+<li><p><strong>Arduino IDE:</strong> Un entorno de desarrollo para
+programar placas Arduino en proyectos de electrónica y
+robótica.</p></li>
+<li><p><strong>LibreOffice:</strong> Una suite de oficina gratuita que
+incluye procesador de texto, hoja de cálculo, presentaciones y
+más.</p></li>
+</ul>
+<p>La disponibilidad de software gratuito hace que la tecnología sea
+accesible para todos, y proporciona a los educadores una amplia gama de
+herramientas para enriquecer la enseñanza y el aprendizaje en un aula
+STEAM o 4.0. Es fundamental que los docentes exploren estas opciones y
+seleccionen las que mejor se adapten a los objetivos educativos y las
+necesidades de sus estudiantes. Al hacerlo, estarán preparando a la
+próxima generación con las habilidades y conocimientos necesarios para
+prosperar en la sociedad digital del siglo XXI.</p>
+<div id="scratch" class="section level2">
+<h2>2.1 <strong>Scratch</strong></h2>
+<p>Scratch es un entorno de programación visual diseñado para enseñar
+programación de una manera lúdica y accesible, especialmente a niños y
+adolescentes. Fue desarrollado por el Instituto de Tecnología de
+Massachusetts (MIT) y se ha convertido en una herramienta popular en
+todo el mundo para introducir conceptos de programación y lógica de
+codificación.</p>
+<p>Características clave de Scratch:</p>
+<ol style="list-style-type: decimal">
+<li><p><strong>Interfaz Gráfica:</strong> Scratch utiliza un enfoque de
+“bloques” de arrastrar y soltar que representan acciones y comandos de
+programación. Los usuarios crean programas combinando estos bloques en
+una secuencia lógica.</p></li>
+<li><p><strong>Programación Visual:</strong> Los bloques de Scratch
+representan comandos como “mover hacia adelante”, “girar”, “reproducir
+sonido” y más. Esto facilita que los principiantes construyan programas
+sin tener que escribir código.</p></li>
+<li><p><strong>Personajes y Escenarios:</strong> Los proyectos de
+Scratch pueden incluir personajes (sprites) y escenarios que los
+usuarios pueden diseñar y animar. Esto fomenta la creatividad y la
+narración visual.</p></li>
+<li><p><strong>Sonido e Imágenes:</strong> Scratch permite agregar
+sonidos y efectos visuales a los proyectos, lo que añade otra dimensión
+de expresión artística y creatividad.</p></li>
+<li><p><strong>Comunidad en Línea:</strong> Scratch cuenta con una
+comunidad en línea donde los usuarios pueden compartir sus proyectos,
+ver los proyectos de otros, y aprender de la comunidad global de
+usuarios de Scratch.</p></li>
+<li><p><strong>Educación y Aprendizaje:</strong> Scratch se utiliza
+ampliamente en entornos educativos para enseñar conceptos de
+programación, pensamiento lógico y resolución de problemas. Hay recursos
+educativos disponibles en línea.</p></li>
+<li><p><strong>Multiplataforma:</strong> Scratch está disponible como
+una aplicación de escritorio (Scratch Offline Editor) y también como una
+versión en línea (Scratch Online), lo que lo hace accesible en una
+variedad de dispositivos y sistemas operativos.</p></li>
+</ol>
+<p>Scratch es una herramienta versátil que se utiliza en escuelas,
+clubes de programación y proyectos individuales para crear historias
+interactivas, juegos, animaciones y más. Es una excelente manera de
+introducir a los jóvenes en el mundo de la programación y la tecnología
+de una manera divertida y educativa.</p>
+<p><strong>Sitio oficial:</strong> <a href="https://scratch.mit.edu/"
+class="uri">https://scratch.mit.edu/</a></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/98awWpkx9UM?si=klj0VnV-DT7Kywen" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+</iframe>
+</div>
+<div id="blender" class="section level2">
+<h2>2.2 <strong>Blender</strong></h2>
+<p>Blender es un potente software de código abierto para modelado 3D,
+animación, renderizado, composición, edición de video y más. Es una
+herramienta versátil y completa que es utilizada por profesionales en la
+industria del cine, animación, diseño de videojuegos, arquitectura,
+diseño industrial y muchas otras disciplinas. A continuación, se
+destacan algunas de las características y capacidades clave de
+Blender:</p>
+<ol style="list-style-type: decimal">
+<li><p><strong>Modelado 3D:</strong> Blender permite crear modelos 3D de
+alta calidad con herramientas de modelado poligonal, subdivisión,
+escultura y más. Puedes crear desde objetos simples hasta personajes
+complejos y entornos detallados.</p></li>
+<li><p><strong>Animación:</strong> Con Blender, puedes animar objetos y
+personajes en 3D mediante la configuración de esqueletos (rigging) y la
+creación de keyframes. Es posible crear animaciones tanto simples como
+sofisticadas.</p></li>
+<li><p><strong>Renderizado:</strong> Blender cuenta con un potente motor
+de renderizado llamado Cycles, que permite generar imágenes
+fotorrealistas. También ofrece Eevee, un motor de renderizado en tiempo
+real que proporciona resultados rápidos y de alta calidad.</p></li>
+<li><p><strong>Composición:</strong> Puedes combinar imágenes y
+secuencias de video en Blender mediante su editor de nodos, lo que te
+permite aplicar efectos, ajustar colores y crear composiciones
+complejas.</p></li>
+<li><p><strong>Simulaciones:</strong> Blender incluye herramientas para
+crear simulaciones de fluidos, partículas, cabello, tela y más. Esto es
+útil para efectos visuales y animaciones realistas.</p></li>
+<li><p><strong>Edición de Video:</strong> Blender cuenta con un editor
+de video no lineal que te permite editar y postproducir videos. Puedes
+combinar clips, agregar efectos y transiciones, y exportar tu trabajo
+final.</p></li>
+<li><p><strong>Motor de Juegos:</strong> Blender incluye un motor de
+juegos que te permite crear videojuegos interactivos en 3D. Puedes
+programar la lógica del juego utilizando Python.</p></li>
+<li><p><strong>Escultura Digital:</strong> Blender proporciona
+herramientas de escultura digital que te permiten esculpir modelos
+orgánicos detallados y texturas.</p></li>
+<li><p><strong>Add-Ons y Personalización:</strong> La comunidad de
+Blender ha desarrollado numerosos complementos (add-ons) que amplían las
+capacidades del software. Además, Blender es altamente personalizable y
+admite secuencias de comandos en Python.</p></li>
+<li><p><strong>Licencia de Código Abierto:</strong> Blender es de código
+abierto y gratuito. Esto significa que puedes descargar, usar y
+modificar el software libremente, lo que ha llevado a una comunidad
+activa y un desarrollo constante de nuevas funciones y mejoras.</p></li>
+</ol>
+<p>Blender es una herramienta poderosa que se utiliza en diversas
+industrias creativas y ofrece un conjunto completo de herramientas para
+la creación y producción de contenido en 3D. Su accesibilidad y su
+comunidad de usuarios hacen que sea una opción atractiva tanto para
+profesionales como para entusiastas y estudiantes.</p>
+<p><strong>Sitio oficial:</strong> <a href="https://www.blender.org/"
+class="uri">https://www.blender.org/</a></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/u9lj-c29dxI?si=gdOGjYoVaYahUv8e" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+</iframe>
+</div>
+<div id="geogebra" class="section level2">
+<h2>2.3 <strong>geogebra</strong></h2>
+<p>GeoGebra es una plataforma educativa que combina matemáticas,
+geometría, álgebra, cálculo y estadísticas en una sola aplicación
+interactiva. Está diseñada para ayudar a estudiantes y profesores a
+explorar, aprender y enseñar conceptos matemáticos de una manera
+dinámica y visual. A continuación, se destacan algunas de las
+características clave de GeoGebra:</p>
+<ol style="list-style-type: decimal">
+<li><p><strong>Geometría Dinámica:</strong> GeoGebra permite la creación
+de construcciones geométricas interactivas en tiempo real. Los usuarios
+pueden dibujar puntos, segmentos, rectas, circunferencias y otras
+figuras, y luego manipularlos para explorar propiedades
+geométricas.</p></li>
+<li><p><strong>Álgebra Interactiva:</strong> GeoGebra combina la
+geometría con el álgebra. Los objetos geométricos pueden estar
+relacionados algebraicamente, lo que permite a los usuarios realizar
+cálculos y resolver ecuaciones mientras exploran visualmente.</p></li>
+<li><p><strong>Cálculo:</strong> GeoGebra incluye herramientas para
+trabajar con funciones matemáticas, derivadas e integrales. Los
+estudiantes pueden visualizar conceptos de cálculo de manera
+interactiva.</p></li>
+<li><p><strong>Herramientas de Estadísticas:</strong> GeoGebra
+proporciona funciones estadísticas para crear gráficos, calcular
+estadísticas descriptivas y explorar conceptos de probabilidad y
+distribuciones.</p></li>
+<li><p><strong>Hoja de Cálculo:</strong> La plataforma incluye una hoja
+de cálculo que permite a los usuarios crear tablas de datos, realizar
+cálculos y crear gráficos a partir de los datos ingresados.</p></li>
+<li><p><strong>Visualización Dinámica:</strong> GeoGebra permite animar
+objetos matemáticos, lo que facilita la comprensión de conceptos
+matemáticos. Los usuarios pueden ver cómo cambian las figuras y las
+funciones a medida que se manipulan.</p></li>
+<li><p><strong>Personalización y Programación:</strong> GeoGebra es
+altamente personalizable y admite la programación a través de su
+lenguaje de secuencias de comandos. Esto permite a los usuarios crear
+sus propias herramientas y aplicaciones personalizadas.</p></li>
+<li><p><strong>Plataforma en Línea:</strong> GeoGebra está disponible
+tanto en una versión en línea como en una versión de escritorio. La
+versión en línea permite a los usuarios acceder a GeoGebra desde
+cualquier dispositivo con acceso a internet.</p></li>
+<li><p><strong>Comunidad y Recursos Educativos:</strong> GeoGebra cuenta
+con una comunidad activa de usuarios y ofrece una amplia variedad de
+recursos educativos, incluyendo tutoriales, ejercicios y materiales de
+enseñanza creados por otros educadores.</p></li>
+</ol>
+<p>GeoGebra se utiliza ampliamente en entornos educativos para enseñar
+matemáticas y promover el aprendizaje activo y visual. Es una
+herramienta versátil que beneficia a estudiantes de todas las edades,
+desde la escuela primaria hasta la educación superior, y también es útil
+para profesionales que desean explorar conceptos matemáticos de manera
+interactiva. Su enfoque en la visualización y la interactividad lo
+convierte en una herramienta valiosa para la enseñanza y el aprendizaje
+de las matemáticas.</p>
+<p><strong>Sitio oficial:</strong> <a
+href="https://www.geogebra.org/?lang=es"
+class="uri">https://www.geogebra.org/?lang=es</a></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5I7YqQidXD0?si=kfIiAOzun60adzM3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+</iframe>
+</div>
+<div id="gimp" class="section level2">
+<h2>2.4 <strong>GIMP</strong></h2>
+<p>GIMP (GNU Image Manipulation Program) es un software de edición de
+imágenes de código abierto y gratuito ampliamente utilizado en diseño
+gráfico, retoque fotográfico y creación de imágenes digitales. A
+continuación, se destacan algunas de las características clave de
+GIMP:</p>
+<ol style="list-style-type: decimal">
+<li><p><strong>Edición de Imágenes:</strong> GIMP ofrece una amplia gama
+de herramientas y funciones para editar imágenes, incluyendo recorte,
+redimensionamiento, rotación, ajuste de brillo y contraste, corrección
+de color y mucho más.</p></li>
+<li><p><strong>Capas:</strong> GIMP admite capas múltiples en una sola
+imagen. Esto permite a los usuarios trabajar en elementos individuales
+de manera independiente, lo que facilita la creación de composiciones
+complejas y efectos visuales.</p></li>
+<li><p><strong>Herramientas de Dibujo:</strong> GIMP incluye
+herramientas de dibujo y pintura, como pinceles, lápices, borradores y
+herramientas de selección que permiten a los usuarios crear
+ilustraciones y obras de arte digitales.</p></li>
+<li><p><strong>Filtros y Efectos:</strong> GIMP proporciona una amplia
+variedad de filtros y efectos especiales que pueden aplicarse a las
+imágenes para lograr resultados únicos. Esto incluye efectos de
+desenfoque, distorsiones, efectos de iluminación y más.</p></li>
+<li><p><strong>Máscaras y Selecciones:</strong> GIMP permite crear
+máscaras y selecciones precisas para aislar partes específicas de una
+imagen y aplicar cambios solo a esas áreas.</p></li>
+<li><p><strong>Herramientas de Texto:</strong> Los usuarios pueden
+agregar texto a las imágenes y personalizar fuentes, tamaños, colores y
+estilos de texto.</p></li>
+<li><p><strong>Compatibilidad de Formatos:</strong> GIMP admite una
+amplia variedad de formatos de archivo, incluyendo JPEG, PNG, GIF, TIFF,
+PSD (Adobe Photoshop), y más.</p></li>
+<li><p><strong>Personalización:</strong> GIMP es altamente
+personalizable, lo que permite a los usuarios adaptar la interfaz y las
+funciones a sus necesidades específicas. También admite secuencias de
+comandos y complementos para ampliar sus capacidades.</p></li>
+<li><p><strong>Licencia de Código Abierto:</strong> GIMP es software de
+código abierto, lo que significa que es gratuito y se puede modificar y
+distribuir libremente. Esto ha llevado a una comunidad activa de
+usuarios y desarrolladores.</p></li>
+<li><p><strong>Plataformas Múltiples:</strong> GIMP está disponible para
+varios sistemas operativos, incluyendo Windows, macOS y Linux, lo que lo
+hace accesible en una variedad de plataformas.</p></li>
+</ol>
+<p>GIMP es una alternativa sólida y de alta calidad a las aplicaciones
+comerciales de edición de imágenes como Adobe Photoshop. Es utilizado
+tanto por profesionales como por entusiastas, y es una herramienta
+valiosa para diseñadores gráficos, fotógrafos, ilustradores y cualquier
+persona que necesite realizar ediciones de imágenes digitales. Además,
+su comunidad de usuarios activa proporciona recursos, tutoriales y
+complementos que amplían sus capacidades.</p>
+<p><strong>Sitio oficial:</strong> <a href="https://www.gimp.org/"
+class="uri">https://www.gimp.org/</a></p>
+</div>
+<div id="arduino-ide" class="section level2">
+<h2>2.5 <strong>Arduino IDE</strong></h2>
+<p>Arduino IDE (Entorno de Desarrollo Integrado) es un software gratuito
+y de código abierto diseñado para programar y desarrollar proyectos con
+placas de desarrollo Arduino. Arduino es una plataforma de hardware de
+código abierto que permite a los usuarios crear dispositivos
+electrónicos interactivos y proyectos de hardware.</p>
+<p>Características clave de Arduino IDE:</p>
+<ol style="list-style-type: decimal">
+<li><p><strong>Lenguaje de Programación:</strong> Arduino utiliza un
+lenguaje de programación basado en C/C++, que es fácil de aprender y
+adecuado para principiantes en programación.</p></li>
+<li><p><strong>Entorno de Desarrollo:</strong> Arduino IDE proporciona
+una interfaz de usuario amigable para escribir, cargar y depurar código
+en placas Arduino. También incluye un editor de código y una consola de
+salida para ver los resultados de la programación.</p></li>
+<li><p><strong>Compatibilidad:</strong> Arduino IDE es compatible con
+una amplia variedad de placas de desarrollo Arduino, incluyendo Arduino
+Uno, Arduino Mega, Arduino Nano y muchas más. También es compatible con
+placas de otros fabricantes que utilizan el mismo
+microcontrolador.</p></li>
+<li><p><strong>Librerías y Ejemplos:</strong> Arduino IDE incluye una
+colección de librerías y ejemplos de código que facilitan la
+programación de diversas funciones y sensores, como el control de
+motores, la comunicación Bluetooth y la lectura de sensores.</p></li>
+<li><p><strong>Carga de Código:</strong> Arduino IDE permite cargar el
+código desarrollado en la placa Arduino a través de un cable USB o una
+conexión serie. Esto hace que la programación de la placa sea sencilla y
+accesible.</p></li>
+<li><p><strong>Depuración:</strong> Aunque la capacidad de depuración en
+Arduino IDE es limitada en comparación con entornos de desarrollo más
+avanzados, los usuarios pueden utilizar la consola de salida para
+verificar errores y resultados.</p></li>
+<li><p><strong>Comunidad Activa:</strong> Arduino cuenta con una
+comunidad global de usuarios y desarrolladores que comparten proyectos,
+tutoriales y soluciones en línea. Esto facilita el aprendizaje y la
+resolución de problemas.</p></li>
+<li><p><strong>Código Abierto:</strong> Arduino IDE es de código
+abierto, lo que significa que los usuarios pueden modificar y
+personalizar el software según sus necesidades. También pueden
+contribuir al desarrollo de la plataforma.</p></li>
+<li><p><strong>Multiplataforma:</strong> Arduino IDE está disponible
+para Windows, macOS y Linux, lo que lo hace accesible en una amplia
+variedad de sistemas operativos.</p></li>
+</ol>
+<p>Arduino IDE es ampliamente utilizado en proyectos de electrónica,
+robótica, automatización y muchas otras aplicaciones. Es especialmente
+popular en la educación y se utiliza en escuelas y universidades para
+enseñar conceptos de programación y electrónica. Además, su simplicidad
+y accesibilidad lo convierten en una herramienta valiosa para
+entusiastas y creadores de todos los niveles de habilidad.</p>
+<p><strong>Sitio oficial:</strong> <a
+href="https://www.arduino.cc/en/software"
+class="uri">https://www.arduino.cc/en/software</a></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CBrjoU5gZpU?si=AbsNRZQqKudkcfkm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+</iframe>
+<div/>
+
+
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
