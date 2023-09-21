@@ -1,0 +1,22 @@
+name: "Educación STEAM & 4.0"
+navbar:
+  title: "STEAM & 4.0"
+  left:
+    - text: "Inicio"
+      href: index.html
+    - text: "Tipos de educación para el siglo XXI"
+      href: asteam.html
+    - text: "Insumos STEAM y 4.0"
+      href: rsteam.html
+    - text: "Propuesta de capacitación"
+      href: propuesta.html
+    - text: "About"
+      href: about.html
+output:
+  html_document:
+    theme: cosmo
+    highlight: textmate
+    include:
+    toc: true
+    toc_float: true
+    css: styles.css
